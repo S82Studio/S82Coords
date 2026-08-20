@@ -36,7 +36,7 @@ jobs:
           release_url = os.environ.get("RELEASE_URL") or ""
           release_body = os.environ.get("RELEASE_BODY") or "Không có thông tin cập nhật."
           author = os.environ.get("AUTHOR_NAME") or "Không xác định"
-          repository = os.environ.get("REPOSITORY") or "S82Studio/TaiXiu"
+          repository = os.environ.get("REPOSITORY") or "S82Studio/Coords"
 
           github_url = f"https://github.com/{repository}"
 
@@ -62,7 +62,7 @@ jobs:
               },
 
               # Tên webhook
-              "username": "S82Studio • TaiXiu",
+              "username": "S82Studio • Coords",
 
               # Avatar của S82Studio trên GitHub
               "avatar_url": "https://github.com/S82Studio.png?size=128",
@@ -70,14 +70,14 @@ jobs:
               "embeds": [
                   {
                       # Tiêu đề
-                      "title": f"🚀 PHIÊN BẢN MỚI — TaiXiu {release_tag}",
+                      "title": f"🚀 PHIÊN BẢN MỚI — Coords {release_tag}",
 
                       # Link khi click vào tiêu đề
                       "url": release_url,
 
                       # Nội dung giới thiệu
                       "description": (
-                          "🎉 **Một phiên bản mới của TaiXiu đã được phát hành!**\n\n"
+                          "🎉 **Một phiên bản mới của Coords đã được phát hành!**\n\n"
                           "Hãy cập nhật lên phiên bản mới nhất để nhận "
                           "những tính năng và sửa lỗi mới."
                       ),
@@ -120,7 +120,7 @@ jobs:
 
                       # Footer
                       "footer": {
-                          "text": "🐉 S82Studio • TaiXiu",
+                          "text": "🐉 S82Studio • Coords",
                           "icon_url": "https://github.com/S82Studio.png?size=64"
                       },
 
