@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>S82 Coords</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app" class="hidden">
+    <div class="panel">
+
+        <div class="panel-header">
+            <div class="brand">
+                <span class="brand-dot"></span>
+                <div class="brand-text">
+                    <h1>S82 Coords</h1>
+                    <span>S82 Studio</span>
+                </div>
+            </div>
+            <button id="btnClose" class="icon-btn" title="Đóng">✕</button>
+        </div>
+
+        <div class="panel-body">
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="live">Toạ độ</button>
+                <button class="tab-btn" data-tab="favorites">Yêu thích</button>
+            </div>
+
+            <div class="tab-content active" data-tab-content="live">
+
+                <div class="coord-grid">
+                    <div class="coord-box">
+                        <span class="coord-label">X</span>
+                        <span class="coord-value" id="valX">0.00</span>
+                    </div>
+                    <div class="coord-box">
+                        <span class="coord-label">Y</span>
+                        <span class="coord-value" id="valY">0.00</span>
+                    </div>
+                    <div class="coord-box">
+                        <span class="coord-label">Z</span>
+                        <span class="coord-value" id="valZ">0.00</span>
+                    </div>
+                    <div class="coord-box">
+                        <span class="coord-label">Hướng</span>
+                        <span class="coord-value" id="valH">0.00</span>
+                    </div>
+                </div>
+
+                <div class="section-title">Sao chép</div>
+                <div class="copy-grid">
+                    <button class="copy-btn" data-copy="vector3">
+                        <span>Vector3</span>
+                        <small>vector3(x, y, z)</small>
+                    </button>
+                    <button class="copy-btn" data-copy="vector4">
+                        <span>Vector4</span>
+                        <small>vector4(x, y, z, w)</small>
+                    </button>
+                    <button class="copy-btn" data-copy="coords">
+                        <span>Toạ độ</span>
+                        <small>{x, y, z}</small>
+                    </button>
+                    <button class="copy-btn" data-copy="xyz">
+                        <span>X, Y, Z</span>
+                        <small>x, y, z</small>
+                    </button>
+                </div>
+
+                <div class="section-title">Công cụ Laser</div>
+                <div class="laser-box">
+                    <button id="btnLaser" class="toggle-btn">
+                        <span class="toggle-dot"></span>
+                        <span id="laserLabel">Đang tắt</span>
+                    </button>
+                    <div class="laser-info hidden" id="laserInfo">
+                        <span>Điểm ngắm: <b id="laserCoords">--, --, --</b></span>
+                        <button class="copy-btn small" id="btnCopyLaser">Sao chép</button>
+                    </div>
+                </div>
+
+                <div class="section-title">Thêm vào yêu thích</div>
+                <div class="add-favorite">
+                    <input type="text" id="favLabel" placeholder="Đặt tên cho địa điểm này..." maxlength="40">
+                    <button id="btnAddFavorite" class="primary-btn">Lưu vị trí</button>
+                </div>
+
+            </div>
+
+            <div class="tab-content" data-tab-content="favorites">
+                <div id="favoritesEmpty" class="empty-state hidden">
+                    <p>Chưa có địa điểm yêu thích nào.</p>
+                    <span>Hãy lưu một vị trí ở tab "Toạ độ".</span>
+                </div>
+                <div id="favoritesList" class="favorites-list"></div>
+            </div>
+
+        </div>
+
+        <div class="panel-footer">
+            <span>Nhấn <b>ESC</b> để đóng nhanh</span>
+        </div>
+
+    </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
