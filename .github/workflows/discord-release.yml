@@ -36,7 +36,7 @@ jobs:
           release_url = os.environ.get("RELEASE_URL") or ""
           release_body = os.environ.get("RELEASE_BODY") or "Không có thông tin cập nhật."
           author = os.environ.get("AUTHOR_NAME") or "Không xác định"
-          repository = os.environ.get("REPOSITORY") or "S82Studio/Coords"
+          repository = os.environ.get("REPOSITORY") or "S82Studio/S82Coords"
 
           github_url = f"https://github.com/{repository}"
 
