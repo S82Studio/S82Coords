@@ -7,8 +7,7 @@ Công cụ lấy toạ độ cho **S82 Studio**.
 - Hiển thị toạ độ X, Y, Z và hướng (heading) theo thời gian thực
 - Sao chép nhanh: `vector3()`, `vector4()`, `{x, y, z}`, `x, y, z`
 - Công cụ Laser: chiếu tia ngắm từ camera, hiện toạ độ điểm chạm, sao chép luôn
-- Lưu địa điểm yêu thích (đặt tên, di chuyển tới, xoá) — lưu bằng KVP nên còn sau khi restart resource
-- Giao diện tiếng Việt, theme sakura đồng bộ với các resource S82 khác
+- Lưu địa điểm yêu thích (đặt tên, di chuyển tới, xoá) 
 - Giới hạn quyền dùng lệnh bằng ACE permission (tuỳ chỉnh trong config)
 
 ## Cài đặt
