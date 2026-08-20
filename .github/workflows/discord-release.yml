@@ -174,7 +174,7 @@ jobs:
               data=data,
               headers={
                   "Content-Type": "application/json",
-                  "User-Agent": "GitHub-Actions-RedeemCode"
+                  "User-Agent": "GitHub-Actions-S82Coords"
               },
               method="POST"
           )
